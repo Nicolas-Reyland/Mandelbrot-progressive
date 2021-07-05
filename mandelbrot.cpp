@@ -26,7 +26,7 @@ void Mandelbrot::draw() {
 	// fl_rgb_color(uchar g) -> returns grayscale
 	for (int i = 0; i < screen_height; i++) {
 		for (int j = 0; j < screen_width; j++) {
-			unsigned char color = (unsigned char) set[i][j];
+			unsigned char color = set[i][j];
 			Fl_Color grayscale = fl_rgb_color(color);
 			fl_color(grayscale);
 			fl_point(j, i); // (j,i) and not (i,j) because i=y and j=x on screen
